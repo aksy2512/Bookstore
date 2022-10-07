@@ -1,0 +1,10 @@
+<%- include('components/header.ejs') %>
+
+<h1>The list of all Available books</h1>
+
+<% for(var i = 0; i < books.length; i++) { %>
+    <% book = books[i] %>
+    <%- include('components/book.ejs') %>
+<% } %>
+
+<%- include('components/footer.ejs') %>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>BOOKS</title>
+</head>
+<body>
+    <div class="container flex flex-col">
+        <div class="find my-10">
+            <h1>Find Book</h1>
+            Click
+            <a class="link" href="/find_all" name = "submit">here</a>
+            to view all books information.
+        </div>
+        <div class="find my-10">
+            <h1>Find Book</h1>
+            <form action="find_by_isbn" method="post">
+                <input type = "text" placeholder="ISBN" name="value">
+                <button type="submit" name = "submit">Submit</button>
+            </form>
+        </div>
+        <div class="add my-10">
+            <h1>Add New Book </h1>
+            <form action="add_books" method="post">
+                <input type = "text" name="Name" placeholder="Name">
+                <input type = "text" name="ISBN" placeholder="ISBN">
+                <input type = "text" name="AUTHOR" placeholder="AUTHOR">
+                <input type = "text" name="PRICE" placeholder="PRICE">
+                <input type = "text" name="Counter_of_Origin" placeholder="COUNTRY">
+                <input type = "number" name="Number_Of_Pages" placeholder="PAGES">
+                <input type = "number" name="Year" placeholder="Year">
+                <input type = "number" name="Stock_Available" placeholder="Stock_Available">
+                <input type = "checkbox" name="Digital_Format_Available" placeholder="Digital_Format_Available">
+                <button type="submit" name = "submit">Submit</button>
+            </form>
+        </div>
+        <div class="delete my-10">
+            <h1>Delete A Book</h1>
+            <form action="del_books" method="post">
+                <input type = "text" placeholder="ISBN" name="value">
+                <button type="submit" name = "submit">Submit</button>
+            </form>
+        </div>
+        <div class="add my-10">
+            <h1>Update a book by isbn</h1>
+            <form action="update_book_byisbn" method="post">
+                <input type = "text" name="ISBN" placeholder="ISBN">
+                <input type = "text" name="Name" placeholder="Name">
+                <input type = "text" name="AUTHOR" placeholder="AUTHOR">
+                <input type = "text" name="PRICE" placeholder="PRICE">
+                <input type = "text" name="Counter_of_Origin" placeholder="COUNTRY">
+                <input type = "number" name="Number_Of_Pages" placeholder="PAGES">
+                <input type = "number" name="Year" placeholder="Year">
+                <input type = "number" name="Stock_Available" placeholder="Stock_Available">
+                <input type = "checkbox" name="Digital_Format_Available" placeholder="Digital_Format_Available">
+                <button type="submit" name = "submit">Submit</button>
+            </form>
+        </div>
+        <div class="add my-10">
+            <h1>Update a book</h1>
+            <form action="update_book" method="post">
+                <input type = "text" name="Name" placeholder="Name">
+                <input type = "text" name="ISBN" placeholder="ISBN">
+                <input type = "text" name="AUTHOR" placeholder="AUTHOR">
+                <input type = "text" name="PRICE" placeholder="PRICE">
+                <input type = "text" name="Counter_of_Origin" placeholder="COUNTRY">
+                <input type = "number" name="Number_Of_Pages" placeholder="PAGES">
+                <input type = "number" name="Year" placeholder="Year">
+                <input type = "number" name="Stock_Available" placeholder="Stock_Available">
+                <input type = "checkbox" name="Digital_Format_Available" placeholder="Digital_Format_Available">
+                <button type="submit" name = "submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
